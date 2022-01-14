@@ -30,53 +30,73 @@
 <body>
     
     <!--Navigation-->
-    <nav class="navbar navbar-light bg-light m-2">
-      <div class="container">
-        <a class="navbar-brand" href="">
-          <img src="assets/images/logo3.png" alt="" width="40" height="40" class="d-inline-block ">
-          <span class="fw-bold">DadJokeDaily</span>
-        </a>
-        <div class="d-flex">          
-            <a href="#subscribe"><button class="btn fw-bold btn-outline-dark">Send me jokes</button></a>
+    <nav class="container navbar sticky-top navbar-fixed navbar-light bg-light border border-0 border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="">
+                <img src="assets/images/logo3.png" alt="" width="40" height="40" class="d-inline-block ">
+                <span class="fw-bold">DadJokeDaily</span>
+            </a>
+            <!-- <div class="d-flex">          
+                <a href="#subscribe"><button class="btn fw-bold btn-outline-dark">Send me jokes</button></a>
+            </div> -->
         </div>
     </nav>
     <!--end of navigation-->
 
     <!--Main section-->
-    <div class="container my-3">
-        <div class="row d-flex align-items-start">
-            <div class="col-md-7 fs-5" style="min-height: 40vh;">
-                <div class="h-100 p-3 mt-4 bg-light border">
-                    <div class="row">
-                        <div class="col-md-12">
+    <div class="my-1">
+        <div class="container">
+            <div class="row">
+                <div class="bg-light col-md-7 fs-5" style="min-height: 40vh;">
+                    <div class="m-3 p-2 d-flex flex-column justify-content-between">
+                        <div class="">
                             <h1>A Dad once said:</h1>
                         </div>
-                        <div class="col-md-12 d-flex align-items-center" style="min-height: 100px">
-                            <p>Why don't sharks eat clowns? Because they taste funny.</p>
+                        <div class="">
+                            <p>Why don't sharks eat clowns? Because they taste funny.Why don't sharks eat clowns? Because they taste funny.Why don't sharks eat clowns? Because they taste funny.</p>
                         </div>
-                        <div class="col-md-12 d-flex justify-content-end">
+                        <div class="d-flex justify-content-end">
                             <button class="btn btn-outline-dark fw-bold" type="button">Refresh</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="subscribe" class="col-md-5 fs-5" style="min-height: 40vh">
-                <div class="h-100 p-3 mt-4 text-white bg-dark">
-                    <h3>Subscribe And Never Miss A Joke</h3>
-                    <p class="fs-6">Get curated jokes sent to your email at intervals and unsubscribe anytime</p>
-                    <form class="row">
-                        <div class="input-group mb-3 bg-dark">
-                            <input type="text" class="form-control border border-light rounded mx-1" placeholder="Email" aria-label="Email">
-                            <button class="fc-white btn btn-outline-light fw-bold border border-light rounded" type="button" style="border: 1px solid blue;">Subscribe</button>
-                        </div>
-                    </form>
+                <div id="subscribe" class="bg-dark text-white col-md-5 fs-5"  style="max-height: 50vh;">
+                    <div class="m-3 p-2">
+                        <h3>Subscribe And Never Miss A Joke</h3>
+                        <p class="fs-6">Get curated jokes sent to your email at intervals and unsubscribe anytime </p>
+                        <form class="row">
+                            <div class="col-sm-12 input-group mb-3 bg-dark">
+                                <input type="text" class="form-control border border-light rounded mx-1" placeholder="Email" aria-label="Email">
+                                <button class="fc-white btn btn-outline-light fw-bold border border-light rounded" type="button" style="border: 1px solid blue;">Subscribe</button>
+                                <div class="col-sm-12 d-flex justify-content-center">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!--end of main section-->
 
+
     <!--Footer-->
+    <div class="container bg-light p-3">
+        <div class="d-flex fw-bold flex-column align-items-center justify-content-between">
+                <p class="d-inline-flex align-items-center">
+                    Made with ❤ by &nbsp;
+                    <a class="link-dark" href="https://github.com/codelikesuraj">Codelikesuraj</a>
+                </p>
+                <p class="d-inline-flex align-items-center">
+                    Powered by &nbsp;
+                    <a class="link-dark" target="_blank" href="https://icanhazdadjoke.com/api">
+                        <img src="https://icanhazdadjoke.com/static/favicon-16x16.png" width="16px" height="16px">icanhazdadjoke
+                    </a>
+                    &nbsp;API
+                </p>
+        </div>
+    </div>
     <!--end of footer-->
 </body>
 </html>
